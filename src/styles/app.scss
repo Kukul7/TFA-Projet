@@ -3,15 +3,25 @@
 @import '../../node_modules/modern-normalize/modern-normalize';
 
 body{
-    background-color: #262626;
+    background-color: #121212;
+}
+
+.header{
+    width: 100%;
+    height:100px;
+    position: absolute;
 }
 
 .logo{
     width: 80px;
     z-index: 10;
     display: block;
-    position: relative;
     margin: 0 auto;
+}
+
+.point{
+    width: 16px;
+    margin-top: 40px;
 }
 
 .section{
@@ -45,9 +55,30 @@ body{
     }
 
     .shape-fill{
-        fill: #262626;
+        fill: #121212;
     }
 }
+
+.wave--circle {
+    bottom: 0;
+    position: relative;
+    width: 100vw;
+    top: 65px;
+
+    svg {
+        position: relative;
+        display: block;
+        width: calc(300% + 1.3px);
+        height: 95px;
+    }
+
+    .shape-fill {
+        fill: #10F98C;
+    }
+}
+
+
+ 
 
 .video{
     position: absolute;
@@ -88,7 +119,7 @@ body{
     
 
     span{
-        color: #000abe;
+        color: #5500BE;
         white-space: pre-line;
     }
 }
@@ -98,7 +129,7 @@ body{
     z-index: 10;
 
     span{
-        color: #000abe;
+        color: #5500BE;
         white-space: pre-line;
     }
 }
@@ -126,7 +157,7 @@ body{
 }
 
 .texte--medium{
-    color:#262626;
+    color: #121212;
     font-weight: 500;
 }
 
@@ -164,7 +195,8 @@ body{
 }
 
 .image--mockup{
-    height: 40%;
+    height: 250px;
+    width: initial;
 }
 
 .wavySection{
@@ -181,4 +213,5 @@ body{
     flex-direction: column;
     align-items: center;
 }
+
 
