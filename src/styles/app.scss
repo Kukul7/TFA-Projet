@@ -27,6 +27,7 @@ body{
 .section{
     display: grid;
     grid-template-columns: 1fr 1.3fr 1fr;
+    
 }
 
 .section--colors{
@@ -77,6 +78,25 @@ body{
     }
 }
 
+.wave--end {
+    position: relative;
+    bottom: 0;
+    width: 100vw;
+    transform: rotate(0deg);
+
+    svg{
+        position: relative;
+        display: block;
+        width: calc(141% + 1.3px);
+        height: 157px;
+    }
+
+    .shape-fill{
+        fill: #121212;
+    }
+}
+
+
 
  
 
@@ -109,6 +129,15 @@ body{
     display: block;
     font-size: 48px;
     line-height: 1;
+    white-space: pre-line;
+}
+
+.title--end{
+    font-size: 64px;
+
+    span{
+        color: #5500BE;
+    }
 }
 
 .title--main{
@@ -199,6 +228,11 @@ body{
     width: initial;
 }
 
+.image--end{
+    width: 125px;
+    margin-top: 55px;
+}
+
 .wavySection{
     width: 100vw;
     height: 100%;
@@ -214,4 +248,23 @@ body{
     align-items: center;
 }
 
+.backgroundCircle{
+    height: 200px;
+    width: 200px;
+    display: flex;
+    position: relative;
+    background-color: #10F98C;
+    border-radius: 100px;
+    top: -175px;
+    margin: 0 auto;
+    z-index: -1;
+}
 
+.Getapp{
+    display: flex;
+}
+
+.image--app{
+    width: 100px;
+    height: 100px;
+}
