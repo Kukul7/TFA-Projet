@@ -12,6 +12,113 @@ body{
     position: absolute;
 }
 
+/* SECTIONS */
+.section{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-bottom: 100px;
+
+    &--colors{
+        background-color: #10F98C;
+    }
+    
+    &--main{
+        height: 60vh;
+        background: linear-gradient(0deg, rgba(16,249,140,1) 0%, rgba(0,0,0,1) 100%);
+    }
+
+
+}
+
+
+
+
+/* TITRES */
+.title{
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 400;
+    color: #262626;
+    display: block;
+    font-size: 48px;
+    line-height: 1;
+    white-space: pre-line;
+    margin-top: 88px;
+
+    padding: 0 25px;
+
+    &--end{
+        font-size: 64px;
+
+        span{
+            color: #5500BE;
+        }
+    }
+
+    &--main{
+        color: white;
+        z-index: 10;
+        position: relative;
+        font-size: 64px;
+        margin-top: 145px;
+    
+
+        span{
+            color: #5500BE;
+            white-space: pre-line;
+        }
+    }
+
+    &--colors{
+        font-size: 64px;
+        z-index: 10;
+
+        span{
+            color: #5500BE;
+            white-space: pre-line;
+        }
+    }
+
+    &--medium{
+        white-space: pre-line;
+        color: white;
+
+        span{
+            color: #10F98C;
+        }
+    }
+
+    &--small{
+        margin-top: 48px;
+        margin: 40px auto;
+    }
+}
+
+
+/* PARAGRAPHES */
+.texte{
+    font-family: 'Dosis', sans-serif;
+    line-height: 1.4;
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+    padding: 0 25px;
+    margin-bottom: 32px;
+    margin-top: 32px;
+
+    span{
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+
+    &--medium{
+        color: #121212;
+        font-weight: 500;
+    }
+}
+
+
+
+/* IMAGES */
 .logo{
     width: 80px;
     z-index: 10;
@@ -23,22 +130,6 @@ body{
     width: 16px;
     margin-top: 40px;
     margin: 40px auto;
-}
-
-.section{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    padding-bottom: 100px;
-    
-}
-
-.section--colors{
-    background-color: #10F98C;
-}
-
-.section--main{
-    height: 60vh;
-    background: linear-gradient(0deg, rgba(16,249,140,1) 0%, rgba(0,0,0,1) 100%);
 }
 
 .wave{
@@ -60,49 +151,46 @@ body{
     .shape-fill{
         fill: #121212;
     }
-}
 
-.wave--circle {
-    bottom: 0;
-    position: relative;
-    width: 100vw;
-    top: 165px;
-
-    svg {
+    &--circle{
+        bottom: 0;
         position: relative;
-        display: block;
-        width: calc(300% + 1.3px);
-        height: 95px;
+        width: 100vw;
+        top: 165px;
+
+        svg {
+            position: relative;
+            display: block;
+            width: calc(300% + 1.3px);
+            height: 95px;
+        }
+
+        .shape-fill {
+            fill: #10F98C;
+        }
     }
 
-    .shape-fill {
-        fill: #10F98C;
-    }
-}
-
-.wave--end {
-    position: relative;
-    bottom: 0;
-    width: 100vw;
-    transform: rotate(0deg);
-
-    svg{
+    &--end{
         position: relative;
-        display: block;
-        width: calc(141% + 1.3px);
-        height: 157px;
+        bottom: 0;
+        width: 100vw;
+        transform: rotate(0deg);
+
+        svg{
+            position: relative;
+            display: block;
+            width: calc(141% + 1.3px);
+            height: 157px;
+        }
+
+        .shape-fill{
+            fill: #121212;
+        }
     }
 
-    .shape-fill{
-        fill: #121212;
-    }
+
 }
 
-
-a{
-    padding:  0 25px;
-}
- 
 
 .video{
     position: absolute;
@@ -112,101 +200,144 @@ a{
     height: 60%;
     object-fit: cover;
 
+    &--overlay{
+        background: linear-gradient(0deg, rgba(16,249,140,1) 0%, rgba(0,0,0,1) 100%);
+        mix-blend-mode: overlay;
+    }
 }
 
-.video_overlay{
-    position: absolute;
-    top: 0;
-    left: 0;
+
+.blocImage{
+    width: 100vw;
+    height: 250px;
+}
+.image{
     width: 100%;
-    height: 60%;
+    height: 100%;
+    object-fit: cover;
 
-    background: linear-gradient(0deg, rgba(16,249,140,1) 0%, rgba(0,0,0,1) 100%);
-    mix-blend-mode: overlay;
+    &--mockup{
+        height: 400px;
+        width: initial;
+        margin: 0 auto;
+    }
+
+    &--mockup2{
+        height: 250px;
+        margin: 0 auto;
+        width: initial;
+    }
+
+    &--end{
+        height: 263px;
+        position: relative;
+        right: 26px;
+        top: 100px; 
+    }
+
+    &--app{
+        width: 170px;
+        padding: 0 25px;
+    }
 }
 
-
-.title{
-    font-family: 'Bebas Neue', cursive;
-    font-weight: 400;
-    color: #262626;
+.wavySection{
+    width: 100vw;
+    height: 100%;
+    fill: #10F98C;
     display: block;
-    font-size: 48px;
-    line-height: 1;
-    white-space: pre-line;
-    margin-top: 88px;
-
-    padding: 0 25px;
-}
-
-.title--end{
-    font-size: 64px;
-
-    span{
-        color: #5500BE;
-    }
-}
-
-.title--main{
-    color: white;
-    z-index: 10;
     position: relative;
-    font-size: 64px;
-    margin-top: 145px;
+    bottom: -101px;
+}
+
+.etape{
+    display: flex;
+    flex-direction: column;
+}
+
+.Getapp{
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+}
+
+
+.backgroundCircle{
+    height: 200px;
+    width: 200px;
+    display: flex;
+    position: relative;
+    background-color: #10F98C;
+    border-radius: 100px;
+    top: -175px;
+    margin: 0 auto;
+    z-index: -1;
+}
+
+/* LISTES */
+.footer{
+    width: 100%;
+    height: 160px;
+    margin-top: 64px;
+    background-color: #121212;
+    color: white;
+    bottom: 0;
+
+    &__list{
+        padding: 0;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 16px;
+    }
+
+    &__el{
+        align-items: center;
+        text-align: center;
+        list-style: none;
+        font-size: 16px;
+        
     
+        a{
+            text-decoration: none;
+            color: white;
+            padding: 0;
+        }
+    }
 
-    span{
-        color: #5500BE;
-        white-space: pre-line;
+    &__pics{
+        height: 30px;
     }
 }
 
-.title--colors{
-    font-size: 64px;
-    z-index: 10;
 
-    span{
-        color: #5500BE;
-        white-space: pre-line;
-    }
+/* LIENS */
+a{
+    padding:  0 25px;
 }
 
-.title--medium{
-    white-space: pre-line;
-    color: white;
-
-    span{
-        color: #10F98C;
-    }
-}
-
-.title--small{
-    margin-top: 48px;
-    margin: 40px auto;
-}
-
-.texte{
-    font-family: 'Dosis', sans-serif;
-    line-height: 1.4;
-    font-size: 16px;
-    font-weight: 400;
-    color: white;
-    padding: 0 25px;
-    margin-bottom: 32px;
-    margin-top: 32px;
-
-    span{
-        font-weight: 600;
-        text-transform: uppercase;
-    }
-}
-
-.texte--medium{
+.links{
+    text-decoration: underline;
+    text-decoration-color: #5500BE;
+    text-decoration-thickness: 3px;
     color: #121212;
-    font-weight: 500;
+    font-size: 20px;
+    font-weight: 600;
+    align-items: initial;
+
+    &:hover{
+        color: #5500BE;
+    }
+
+    &--white{
+        color: white;
+    }
 }
 
 
+/* MENU */
+
+/* GRILLES */
 .dgrid-start1{
     grid-column-start: 1;
 }
@@ -229,122 +360,3 @@ a{
     grid-column-end: 3;
 }
 
-.blocImage{
-    width: 100vw;
-    height: 250px;
-}
-.image{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.image--mockup{
-    height: 400px;
-    width: initial;
-    margin: 0 auto;
-}
-
-.image--mockup2{
-    height: 250px;
-    margin: 0 auto;
-    width: initial;
-}
-
-.image--end{
-    height: 263px;
-    position: relative;
-    right: 26px;
-    top: 100px;
-}
-
-.wavySection{
-    width: 100vw;
-    height: 100%;
-    fill: #10F98C;
-    display: block;
-    position: relative;
-    bottom: -101px;
-}
-
-.etape{
-    display: flex;
-    flex-direction: column;
-}
-
-.links{
-    text-decoration: underline;
-    text-decoration-color: #5500BE;
-    text-decoration-thickness: 3px;
-    color: #121212;
-    font-size: 20px;
-    font-weight: 600;
-    align-items: initial;
-}
-
-.links:hover{
-    color: #5500BE;
-}
-
-.links--white{
-    color: white;
-}
-
-.backgroundCircle{
-    height: 200px;
-    width: 200px;
-    display: flex;
-    position: relative;
-    background-color: #10F98C;
-    border-radius: 100px;
-    top: -175px;
-    margin: 0 auto;
-    z-index: -1;
-}
-
-.Getapp{
-    display: flex;
-    gap: 15px;
-    flex-direction: column;
-}
-
-.image--app{
-    width: 170px;
-    padding: 0 25px;
-    
-}
-
-.footer{
-    width: 100%;
-    height: 160px;
-    margin-top: 64px;
-    background-color: #121212;
-    color: white;
-    bottom: 0;
-}
-
-.footer__list{
-    padding: 0;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap: 16px;
-}
-
-.footer__el{
-    align-items: center;
-    text-align: center;
-    list-style: none;
-    font-size: 16px;
-    
-
-    a{
-        text-decoration: none;
-        color: white;
-        padding: 0;
-    }
-}
-
-.footer__pics{
-    height: 30px;
-}
