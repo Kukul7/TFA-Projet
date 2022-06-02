@@ -37,7 +37,7 @@ body{
 .title{
     font-family: 'Bebas Neue', cursive;
     font-weight: 400;
-    color: #262626;
+    color: #121212;
     display: block;
     font-size: 48px;
     line-height: 1;
@@ -237,7 +237,6 @@ body{
 
     &--app{
         width: 170px;
-        padding: 0 25px;
     }
 }
 
@@ -259,6 +258,7 @@ body{
     display: flex;
     gap: 15px;
     flex-direction: column;
+    padding: 0 50px;
 }
 
 
@@ -360,3 +360,167 @@ a{
     grid-column-end: 3;
 }
 
+@media screen and (min-width: 700px){
+
+
+    
+    
+    /* SECTIONS */
+    .section{
+        padding-bottom: 100px;
+
+        &--main{
+            height: 70vh;
+        }
+    }
+
+    /* TITRES */
+    .title{
+        font-size: 96px;
+        margin-top: 150px;
+        padding: 0 50px;
+    
+        &--end{
+            font-size: 128px;
+            margin-top: 120px;
+        }
+    
+        &--main{
+            font-size: 128px;
+        }
+    
+        &--colors{
+            font-size: 128px;
+            margin-top: 50px;
+        }
+
+    }
+    
+    
+    /* PARAGRAPHES */
+    .texte{
+        font-size: 20px;
+        padding: 0 50px;
+        margin-bottom: 64px;
+        margin-top: 64px;
+    }
+    
+    
+    
+    /* IMAGES */
+    .logo{
+        width: 120px;
+    }
+    
+    .point{
+        width: 20px;
+    }
+    
+    .wave{
+        bottom: 29.9vh;
+
+        &--end{
+            bottom: 2px;
+        }
+    }
+    
+    
+    .video{
+        height: 70%;
+    }
+    
+    .image{
+    
+        &--mockup{
+            height: 625px;
+        }
+    
+        &--mockup2{
+            height: 460px;
+            position: relative;
+            right: 8px;
+        }
+    
+        &--end{
+            height: 460px; 
+        }
+    
+        &--app{
+            height: 50px;
+        }
+    }
+    
+    .wavySection{
+        bottom: -131px;
+    }
+    
+    .Getapp{
+        gap: 25px;
+        flex-direction: row;
+        padding: 0 50px;
+        justify-content: center;
+    }
+    
+    
+    .backgroundCircle{
+        height: 400px;
+        width: 400px;
+        border-radius: 200px;
+        top: -340px;
+    }
+    
+    /* LISTES */
+    .footer{
+    
+        &__list{
+            gap: 20px;
+        }
+    
+        &__el{
+            font-size: 20px;
+        }
+    
+        &__pics{
+            height: 40px;
+        }
+    }
+    
+    
+    /* LIENS */
+    a{
+        padding:  0 50px;
+    }
+    
+    .links{
+        text-decoration-thickness: 5px;
+        font-size: 24px;
+        font-weight: 600;
+    }
+    
+    
+    /* MENU */
+    
+    /* GRILLES */
+    .dgrid-start1{
+        grid-column-start: 1;
+    }
+    .dgrid-start2{
+        grid-column-start: 2;
+    }
+    .dgrid-start3{
+        grid-column-start: 3;
+    }
+    .dgrid-end-1{
+        grid-column-end: -1;
+    }
+    .dgrid-end1{
+        grid-column-end: 1;
+    }
+    .dgrid-end2{
+        grid-column-end: 2;
+    }
+    .dgrid-end3{
+        grid-column-end: 3;
+    }
+
+}
