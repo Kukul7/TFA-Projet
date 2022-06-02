@@ -26,7 +26,8 @@ body{
 
 .section{
     display: grid;
-    grid-template-columns: 1fr 1.3fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-bottom: 100px;
     
 }
 
@@ -64,7 +65,7 @@ body{
     bottom: 0;
     position: relative;
     width: 100vw;
-    top: 65px;
+    top: 165px;
 
     svg {
         position: relative;
@@ -97,7 +98,9 @@ body{
 }
 
 
-
+a{
+    padding:  0 25px;
+}
  
 
 .video{
@@ -130,6 +133,9 @@ body{
     font-size: 48px;
     line-height: 1;
     white-space: pre-line;
+    margin-top: 88px;
+
+    padding: 0 25px;
 }
 
 .title--end{
@@ -172,15 +178,20 @@ body{
     }
 }
 
+.title--small{
+    margin-top: 48px;
+}
+
 .texte{
     font-family: 'Dosis', sans-serif;
     line-height: 1.4;
     font-size: 16px;
     font-weight: 400;
     color: white;
+    padding: 0 25px;
 
     span{
-        color: #10F98C;
+        font-weight: 600;
         text-transform: uppercase;
     }
 }
@@ -224,13 +235,22 @@ body{
 }
 
 .image--mockup{
+    height: 400px;
+    width: initial;
+    margin: 0 auto;
+}
+
+.image--mockup2{
     height: 250px;
+    margin: 0 auto;
     width: initial;
 }
 
 .image--end{
-    width: 125px;
-    margin-top: 55px;
+    height: 263px;
+    position: relative;
+    right: 26px;
+    top: 100px;
 }
 
 .wavySection{
@@ -239,7 +259,7 @@ body{
     fill: #10F98C;
     display: block;
     position: relative;
-    bottom: -1px;
+    bottom: -101px;
 }
 
 .etape{
@@ -262,9 +282,47 @@ body{
 
 .Getapp{
     display: flex;
+    gap: 15px;
+    flex-direction: column;
 }
 
 .image--app{
-    width: 100px;
-    height: 100px;
+    width: 170px;
+    padding: 0 25px;
+    
+}
+
+.footer{
+    width: 100%;
+    height: 160px;
+    margin-top: 64px;
+    background-color: #121212;
+    color: white;
+    bottom: 0;
+}
+
+.footer__list{
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 16px;
+}
+
+.footer__el{
+    align-items: center;
+    text-align: center;
+    list-style: none;
+    font-size: 16px;
+    
+
+    a{
+        text-decoration: none;
+        color: white;
+        padding: 0;
+    }
+}
+
+.footer__pics{
+    height: 30px;
 }
