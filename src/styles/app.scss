@@ -22,6 +22,7 @@ body{
 .point{
     width: 16px;
     margin-top: 40px;
+    margin: 40px auto;
 }
 
 .section{
@@ -151,6 +152,7 @@ a{
     z-index: 10;
     position: relative;
     font-size: 64px;
+    margin-top: 145px;
     
 
     span{
@@ -180,6 +182,7 @@ a{
 
 .title--small{
     margin-top: 48px;
+    margin: 40px auto;
 }
 
 .texte{
@@ -189,6 +192,8 @@ a{
     font-weight: 400;
     color: white;
     padding: 0 25px;
+    margin-bottom: 32px;
+    margin-top: 32px;
 
     span{
         font-weight: 600;
@@ -265,7 +270,24 @@ a{
 .etape{
     display: flex;
     flex-direction: column;
-    align-items: center;
+}
+
+.links{
+    text-decoration: underline;
+    text-decoration-color: #5500BE;
+    text-decoration-thickness: 3px;
+    color: #121212;
+    font-size: 20px;
+    font-weight: 600;
+    align-items: initial;
+}
+
+.links:hover{
+    color: #5500BE;
+}
+
+.links--white{
+    color: white;
 }
 
 .backgroundCircle{
