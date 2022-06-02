@@ -130,6 +130,7 @@ body{
     width: 16px;
     margin-top: 40px;
     margin: 40px auto;
+    
 }
 
 .wave{
@@ -209,7 +210,7 @@ body{
 
 .blocImage{
     width: 100vw;
-    height: 250px;
+    height: 100%
 }
 .image{
     width: 100%;
@@ -229,7 +230,7 @@ body{
     }
 
     &--end{
-        height: 263px;
+        height: 100%;
         position: relative;
         right: 26px;
         top: 100px; 
@@ -324,6 +325,7 @@ a{
     font-size: 20px;
     font-weight: 600;
     align-items: initial;
+    
 
     &:hover{
         color: #5500BE;
@@ -338,25 +340,25 @@ a{
 /* MENU */
 
 /* GRILLES */
-.dgrid-start1{
+.mgrid-start1{
     grid-column-start: 1;
 }
-.dgrid-start2{
+.mgrid-start2{
     grid-column-start: 2;
 }
-.dgrid-start3{
+.mgrid-start3{
     grid-column-start: 3;
 }
-.dgrid-end-1{
+.mgrid-end-1{
     grid-column-end: -1;
 }
-.dgrid-end1{
+.mgrid-end1{
     grid-column-end: 1;
 }
-.dgrid-end2{
+.mgrid-end2{
     grid-column-end: 2;
 }
-.dgrid-end3{
+.mgrid-end3{
     grid-column-end: 3;
 }
 
@@ -440,10 +442,7 @@ a{
             position: relative;
             right: 8px;
         }
-    
-        &--end{
-            height: 460px; 
-        }
+
     
         &--app{
             height: 50px;
@@ -494,7 +493,174 @@ a{
     .links{
         text-decoration-thickness: 5px;
         font-size: 24px;
+    }
+    
+
+}
+
+
+
+@media screen and (min-width: 1200px){
+
+
+    
+    
+    /* SECTIONS */
+    .section{
+        padding-bottom: 150px;
+
+        &--main{
+            height: 100vh;
+        }
+
+        &--colors{
+            display: grid;
+            grid-template-columns: 1fr 0.5fr 1fr 0.5fr 1fr 0.5fr 1fr;
+        }
+    }
+
+    /* TITRES */
+    .title{
+        font-size: 128px;
+        margin-top: 200px;
+        padding: 0 100px;
+    
+        &--end{
+            font-size: 192px;
+            margin-top: 150px;
+        }
+    
+        &--main{
+            font-size: 192px;
+        }
+    
+        &--colors{
+            font-size: 192px;
+            margin-top: 75px;
+        }
+
+        &--small{
+            padding: 0;
+            margin: 0 auto;
+            font-size: 56px;
+        }
+
+    }
+    
+    
+    /* PARAGRAPHES */
+    .texte{
+        font-size: 24px;
+        padding: 0 100px;
+        margin-bottom: 64px;
+        margin-top: 64px;
+
+        &--medium{
+            padding: 0 0 0 2vw;
+            font-size: 20px;
+            margin: 0;
+        }
+    }
+    
+    
+    
+    /* IMAGES */
+    .logo{
+        width: 152px;
+    }
+    
+    .point{
+        width: 1vw;
+        transform: rotate(90deg);
+        position: relative;
+        top: 125px;
+    }
+
+    
+    
+    .wave{
+        bottom: 0;
+
+        &--end{
+            bottom: 2px;
+        }
+    }
+    
+    
+    .video{
+        height: 100%;
+    }
+
+
+    .image{
+    
+
+        &--mockup{
+            height: 300px;
+            width: 140px;
+            margin: 30px auto;
+            padding: 0;
+        }
+    
+        &--mockup2{
+            height: 460px;
+            position: relative;
+            right: 8px;
+        }
+
+    
+        &--app{
+            height: 50px;
+        }
+
+    }
+    
+    .wavySection{
+        bottom: -131px;
+    }
+    
+    .Getapp{
+        gap: 25px;
+        flex-direction: row;
+        padding: 0 50px;
+        justify-content: center;
+    }
+    
+    
+    .backgroundCircle{
+        height: 400px;
+        width: 400px;
+        border-radius: 200px;
+        top: -340px;
+    }
+    
+    /* LISTES */
+    .footer{
+    
+        &__list{
+            gap: 20px;
+        }
+    
+        &__el{
+            font-size: 20px;
+        }
+    
+        &__pics{
+            height: 40px;
+        }
+    }
+    
+    
+    /* LIENS */
+    a{
+        padding:  0 50px;
+    }
+    
+    .links{
+        text-decoration-thickness: 5px;
+        font-size: 24px;
         font-weight: 600;
+        margin-top: 100px;
     }
     
     
@@ -510,6 +676,21 @@ a{
     .dgrid-start3{
         grid-column-start: 3;
     }
+    .dgrid-start4{
+        grid-column-start: 4;
+    }
+    .dgrid-start5{
+        grid-column-start: 5;
+    }
+    .dgrid-start6{
+        grid-column-start: 6;
+    }
+    .dgrid-start7{
+        grid-column-start: 7;
+    }
+    .dgrid-start8{
+        grid-column-start: 8;
+    }
     .dgrid-end-1{
         grid-column-end: -1;
     }
@@ -521,6 +702,21 @@ a{
     }
     .dgrid-end3{
         grid-column-end: 3;
+    }
+    .dgrid-end4{
+        grid-column-end: 4;
+    }
+    .dgrid-end5{
+        grid-column-end: 5;
+    }
+    .dgrid-end6{
+        grid-column-end: 6;
+    }
+    .dgrid-end7{
+        grid-column-end: 7;
+    }
+    .dgrid-end8{
+        grid-column-end: 8;
     }
 
 }
