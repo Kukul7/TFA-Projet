@@ -35,9 +35,15 @@ body{
         background-position: bottom left;
     }
 
+    
+
 }
 
-
+.logoLink{
+    display: block;
+    z-index: 10;
+    margin: 0 auto;
+}
 
 
 /* TITRES */
@@ -136,7 +142,7 @@ body{
     width: 80px;
     z-index: 10;
     display: block;
-    margin: 0 auto;
+    margin-top: 2vw;
 }
 
 .point{
@@ -254,6 +260,10 @@ body{
         width: 30vw;
         padding: 0 6vw;
         object-fit: contain;
+    }
+
+    &--casestudy{
+        padding: 0 6vw;
     }
 }
 
@@ -480,6 +490,10 @@ a{
         &--app{
             height: 50px;
         }
+
+        &--casestudy{
+            padding: 0 8vw;
+        }
     }
     
     .wavySection{
@@ -639,16 +653,21 @@ a{
         &--end{
             width: initial;
             right: 7vw;
+            height: 42vw;
         }
     
         &--app{
             height: 5vw;
             object-fit: contain;
-            width: 16vw;
+            width: initial
         }
 
         &--guitare{
             transform: rotate(-90deg);
+        }
+
+        &--casestudy{
+            padding: 0 10vw;
         }
     }
     
@@ -657,10 +676,9 @@ a{
     }
     
     .Getapp{
-        gap: 25px;
         flex-direction: row;
         padding: 0 10vw;
-        justify-content: initial;
+        justify-content: center;
     }
     
     
