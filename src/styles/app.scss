@@ -35,7 +35,9 @@ body{
         background-position: bottom left;
     }
 
-    
+    &--caseStudy{
+        height: 35vh;
+    }
 
 }
 
@@ -44,6 +46,7 @@ body{
     z-index: 10;
     margin: 0 auto;
 }
+
 
 
 /* TITRES */
@@ -235,6 +238,9 @@ body{
         }
     }
 
+    &--caseStudy{
+        bottom: 64.9vh;
+    }
 
 }
 
@@ -253,6 +259,20 @@ body{
     }
 }
 
+.blocVideo{
+    width: 83vw;
+    display: block;
+    margin: 0 auto;
+
+    video{
+        width: 83vw;
+    }
+}
+
+.videoPub{
+    width: 80vw;
+    margin: 0 auto;
+}
 
 .blocImage{
     width: 100vw;
@@ -416,6 +436,11 @@ a{
     grid-column-end: 3;
 }
 
+.uikit{
+    margin: 0;
+    padding: 6vw;
+}
+
 @media screen and (min-width: 700px){
 
 
@@ -427,6 +452,10 @@ a{
 
         &--main{
             height: 70vh;
+        }
+
+        &--caseStudy{
+            height: 35vh;
         }
     }
 
@@ -503,6 +532,10 @@ a{
 
         &--end{
             bottom: 2px;
+        }
+
+        &--caseStudy{
+            bottom: 64.9vh;
         }
     }
     
@@ -593,7 +626,10 @@ a{
 
 }
 
-
+.uikit{
+    margin: 0;
+    padding: 8vw;
+}
 
 @media screen and (min-width: 1200px){
 
@@ -614,6 +650,10 @@ a{
             background-size: 45vw;
             background-position: right;
             background-position-y: initial;
+        }
+
+        &--caseStudy{
+            height: 55vh;
         }
     }
 
@@ -693,6 +733,10 @@ a{
 
         &--circle{
             top: 215px
+        }
+
+        &--caseStudy{
+            bottom: 44.9vh;
         }
     }
     
@@ -810,5 +854,8 @@ a{
 
 }
     
-    
+.uikit{
+    margin: 0;
+    padding: 10vw;
+}
 
