@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>DWMA project</title>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-  <meta name="description" content="">
+  <meta name="description" content="Landing page Wave Music">
   <!-- Typo -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,10 +13,26 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Hind:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <!-- Meta Partage -->
-  <!-- Favicon -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <!-- favicon-->
+  <link rel="icon" type="image/svg" href="./assets/images/favicon.svg">
+  <!-- Card meta pour Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@RassartJason">
+  <meta name="twitter:title" content="Wave Music | TFA - Jason Rassart" />
+  <meta name="twitter:description" content="Landing page de Wave Music, l'application pour apprendre la musique - TFA 2022" />
+  <!-- Twitter summary card with large image must be at least 280x150px -->
+  <meta name="twitter:image" content="https://jason-rassart.be/projets/tfa/assets/images/logo.svg">
+  <!-- Open Graph meta pour Facebook -->
+  <meta property="og:title" content="Wave Music | TFA - Jason Rassart" />
+  <meta property="og:url" content="https://jason-rassart.be/projets/tfa/index" />
+  <meta property="og:image" content="http://jason-rassart.be/projets/tfa/assets/images/logo.svg" />
+  <meta property="og:description" content="Landing page de Wave Music, l'application pour apprendre la musique - TFA 2022" />
+  <meta property="og:site_name" content="Wave Music | TFA - Jason Rassart" />
+  <meta property="og:type" content="website" />
+  <!-- Titre -->
+  <title>Wave Music | TFA - Jason Rassart</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="styles/app.css">
 
   <script src="scripts/app.js" defer></script>
@@ -26,7 +41,7 @@
   <header class="header section">
     
     <a class="logoLink  mgrid-start1 mgrid-end-1" href="./index.html">
-      <img class="logo" src="./assets/images/logo.png">
+      <img class="logo" src="./assets/images/logo.svg">
     </a>
 
   </header>
@@ -72,7 +87,7 @@
 
       <div class="etape mgrid-start1 mgrid-end-1">
         <h3 class="title title--small title--small1 mgrid-start2 mgrid-end3">Start</h3>
-        <img class="image image--mockup mockup1 mgrid-start2 mgrid-end3" src="./assets/images/start-mockup.png">
+        <img class="image image--mockup mockup1 mgrid-start2 mgrid-end3" src="./assets/images/start-mockup.png" srcset="./assets/images/start-mockup@2x 2x.png">
         <p class="texte texte--medium mgrid-start1 mgrid-end-1 dgrid-start3 dgrid-end-1">Commence par te créer un compte ! Ce n’est pas obligatoire mais nous le recommandons. Enchaîne par choisir ton premier instrument. Tu n’en as pas encore ? Pas de panique nous avons un guide tout préparé à cet occassion. </p>
         <svg class="point point--var mgrid-start2 mgrid-end3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16.5 228.5"><defs><style>.cls-1{fill:#121212}</style></defs><circle class="cls-1" cx="8" cy="8" r="8"/><circle class="cls-1" cx="8.5" cy="61.5" r="8"/><circle class="cls-1" cx="8.5" cy="114.5" r="8"/><circle class="cls-1" cx="8.5" cy="167.5" r="8"/><circle class="cls-1" cx="8.5" cy="220.5" r="8"/></svg>
       </div>
@@ -104,7 +119,7 @@
         <h3 class="title title--small title--small4 mgrid-start2 mgrid-end3">Master</h3>
         <img class="image image--mockup mockup4 mgrid-start2 mgrid-end3" src="./assets/images/master-mockup.png">
         <p class="texte texte--medium mgrid-start1 mgrid-end-1 dgrid-start3 dgrid-end-1">Tu as maintenant toutes les bases nécessaires pour devenir un expert voir un maître de ton instrument ! Alors qu’attends-tu pour essayer ? </p>
-        <a class="links links1 mgrid-start1 mgrid-end-1" href="#">Rejoins-nous maintenant !</a>
+        <a class="links links1 mgrid-start1 mgrid-end-1" href="https://www.figma.com/file/jyEf376bmk8bh0AyARtgSG/Untitled?node-id=0%3A1">Rejoins-nous maintenant !</a>
       </div>
       
 
@@ -127,7 +142,7 @@
       <div class="backgroundCircle mgrid-start1 mgrid-end-1"></div>
       <p class="texte texte--up mgrid-start1 mgrid-end-1">Wave Music vous propose le meilleur moyen pour apprendre d’un instrument : la Pratique ! Pratiquez et entraînez vous sur vos musiques préférées afin de devenir un expert et d'impressionner vos amis.
       </p>
-      <a class="links links--white links2 mgrid-start1 mgrid-end-1">Rejoins-nous maintenant !</a>
+      <a class="links links--white links2 mgrid-start1 mgrid-end-1" href="https://www.figma.com/file/jyEf376bmk8bh0AyARtgSG/Untitled?node-id=0%3A1">Rejoins-nous maintenant !</a>
 
     </section>
 
@@ -144,8 +159,12 @@
       <img class="image image--end mgrid-start3 mgrid-end-1" src="./assets/images/mockup-getit.png">
 
       <div class="Getapp mgrid-start1 mgrid-end3">
-        <img class="image image--app" src="./assets/images/appstore.png"> 
-        <img class="image image--app" src="./assets/images/googleplay.png"> 
+        <a href="https://www.figma.com/file/jyEf376bmk8bh0AyARtgSG/Untitled?node-id=0%3A1">
+          <img class="image image--app" src="./assets/images/appstore.png">
+        </a>
+        <a href="https://www.figma.com/file/jyEf376bmk8bh0AyARtgSG/Untitled?node-id=0%3A1">
+          <img class="image image--app" src="./assets/images/googleplay.png">
+        </a>
       </div>
 
     </section>
@@ -157,7 +176,7 @@
             
     <ul class="footer__list">
         <li class="footer__el">
-            <a href=";/video.html">Video</a>
+            <a href="./video.html">Video</a>
         </li>
         <li class="footer__el">
             <a href="./case-study.html">Case Study</a>
