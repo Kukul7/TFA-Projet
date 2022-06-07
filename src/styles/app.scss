@@ -445,6 +445,10 @@ body{
     &--white{
         color: white;
     }
+
+    &--credits{
+        text-decoration: none;
+    }
 }
 
 
@@ -530,7 +534,6 @@ body{
         padding: 0 8vw;
         margin-bottom: 64px;
         margin-top: 64px;
-        min-width: 55ch;
         max-width: 100ch;
 
         &--guitare{
@@ -658,6 +661,10 @@ body{
         &--white{
             margin: 0;
         }
+
+        &--credits{
+            margin: 0;
+        }
     }
     
 
@@ -750,7 +757,7 @@ body{
         }
 
         &--center{
-            padding: 0 25vw;
+            padding: 0 5vw;
         }
         
     }
@@ -867,6 +874,11 @@ body{
         text-decoration-thickness: 8px;
         font-size: 40px;
         margin: 0 auto;
+
+        &--credits{
+            margin: 0;
+            padding: 0 10vw;
+        }
     }
 
     /* GRILLES */
