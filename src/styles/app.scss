@@ -90,7 +90,7 @@ body{
     white-space: pre-line;
     margin-top: 88px;
 
-    padding: 0 6vw;
+    padding: 0 0 0 6vw;
 
     &--end{
         font-size: 64px;
@@ -156,6 +156,7 @@ body{
     padding: 0 6vw;
     margin-bottom: 32px;
     margin-top: 32px;
+    
 
     span{
         font-weight: 600;
@@ -529,6 +530,8 @@ body{
         padding: 0 8vw;
         margin-bottom: 64px;
         margin-top: 64px;
+        min-width: 55ch;
+        max-width: 100ch;
 
         &--guitare{
             margin-bottom: 32vw;
@@ -724,12 +727,14 @@ body{
         padding: 0 10vw;
 
         &--medium{
-            padding: 0 25vw;
+            padding: 0;
+            margin: 64px auto;
         }
 
         &--up{
             position: relative;
             bottom: 25vw;
+            margin: 0 auto;
         }
 
         &--citation{
